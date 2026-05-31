@@ -258,7 +258,7 @@ header
 
 .header-area .main-nav .nav li:last-child {
   padding-right: 0px;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 .header-area .main-nav .nav li:last-child a,
@@ -612,6 +612,23 @@ a:hover { color: #3d5c50; }
   color: #5c7c6e;
   font-size: 9px;
   top: 5px;
+}
+
+/* Nav stars — decorative only, don't affect spacing */
+.header-area .main-nav .nav li {
+  position: relative;
+}
+
+.header-area .main-nav .nav li:before {
+  content: '✦' !important;
+  display: block !important;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #5c7c6e;
+  font-size: 7px;
+  pointer-events: none;
 }
 
 /* Make sure nav li never gets the bullet */
