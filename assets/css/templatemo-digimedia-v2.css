@@ -614,21 +614,10 @@ a:hover { color: #3d5c50; }
   top: 5px;
 }
 
-/* Nav stars — between items as separators, not overlapping text */
-.header-area .main-nav .nav li {
-  position: relative;
-}
-
-.header-area .main-nav .nav li:not(:first-child):before {
-  content: '✦' !important;
-  display: inline-block !important;
-  position: absolute;
-  left: -2px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #5c7c6e;
-  font-size: 7px;
-  pointer-events: none;
+/* Nav stars — removed */
+.header-area .main-nav .nav li:before {
+  content: none !important;
+  display: none !important;
 }
 
 /* Make sure nav li never gets the bullet */
