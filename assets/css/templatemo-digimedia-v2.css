@@ -614,16 +614,16 @@ a:hover { color: #3d5c50; }
   top: 5px;
 }
 
-/* Nav stars — decorative only, don't affect spacing */
+/* Nav stars — between items as separators, not overlapping text */
 .header-area .main-nav .nav li {
   position: relative;
 }
 
-.header-area .main-nav .nav li:before {
+.header-area .main-nav .nav li:not(:first-child):before {
   content: '✦' !important;
-  display: block !important;
+  display: inline-block !important;
   position: absolute;
-  left: 0px;
+  left: -2px;
   top: 50%;
   transform: translateY(-50%);
   color: #5c7c6e;
