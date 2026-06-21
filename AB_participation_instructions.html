@@ -95,6 +95,63 @@
       padding: 16px 20px;
       margin: 24px 0;
     }
+    .section-divider {
+      border: none;
+      border-top: 2px solid #5c7c6e;
+      margin: 20px 0 0 0;
+      opacity: 0.4;
+    }
+    .guided-experience-label {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 22px;
+      color: #e07b54;
+      text-transform: none;
+      letter-spacing: normal;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .prompt-block {
+      margin-bottom: 16px;
+      padding: 0;
+      border-left: none;
+    }
+    .prompt-block summary {
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #1e1e2e;
+      padding: 14px 18px;
+      background: #f5f4f0;
+      border-left: 3px solid #5c7c6e;
+      list-style: none;
+    }
+    .prompt-block.required summary {
+      border-left: 3px solid #e07b54;
+    }
+    .prompt-block summary::-webkit-details-marker {
+      display: none;
+    }
+    .prompt-block summary::before {
+      content: '\25B6';
+      display: inline-block;
+      font-size: 11px;
+      color: #5c7c6e;
+      margin-right: 10px;
+      transition: transform 0.15s ease;
+    }
+    .prompt-block[open] summary::before {
+      transform: rotate(90deg);
+    }
+    .prompt-block .prompt-content {
+      padding: 16px 18px;
+      border-left: 3px solid #5c7c6e;
+      margin-left: 0;
+    }
+    .prompt-block.required .prompt-content {
+      border-left: 3px solid #e07b54;
+    }
   </style>
 </head>
 
@@ -163,6 +220,8 @@
         <p><strong>Option A &amp; Option B submissions will be collected using this form: </strong><a href="https://sjsu.qualtrics.com/jfe/form/SV_9BTZ4h6KGkqzuHY" class="cta-link">Submit A & B entries here.</a></p>
 
         <p><em>You can submit to just Option A, just Option B, or BOTH Option A and B!</em></p>
+
+        <p>Not sure where to begin? Skip ahead to the <a href="#guided-experience" class="cta-link">Guided Experience Instructions</a> below for a step-by-step walkthrough of picking a platform and working through the reflection prompts.</p>
 
         <!-- In-page sub-navigation
         <div class="subnav">
@@ -266,6 +325,7 @@
       <div class="col-lg-12">
         <h6>SUBMISSION EVALUATION CRITERIA</h6>
         <p>Given the non-traditional formats invited through Option A &amp; Option B submissions, submissions through these tracks will <em>not</em> be evaluated using the existing ASIS&amp;T criteria. Option A submissions will be holistically evaluated on best-faith effort by the committee based on a combination of the content and the provided supplementary information (descriptions and prompt responses, if applicable). Option B submissions will be holistically evaluated based on criteria such as reflection depth and quality of writing. The committee reserves the right to adjust criteria to accommodate the nature of submissions and symposium programming.</p>
+        <hr class="section-divider">
       </div>
     </div>
   </div>
@@ -276,7 +336,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h6>GUIDED EXPERIENCE INSTRUCTIONS</h6>
+        <span class="guided-experience-label">GUIDED EXPERIENCE INSTRUCTIONS</span>
 
         <p>Don&rsquo;t know where to start when it comes to social media? Does the thought of creating your own content seem daunting and confusing? And how might you think about <em>yourself</em> within this entire process? Not to worry! To accompany you on this journey of self-exploration through online media, we&rsquo;ve created a series of guides to help you navigate this experience.</p>
 
@@ -333,20 +393,22 @@
 
         <p>There are a total of 8 reflection prompts. <strong>Prompt 0 is required</strong>, as it&rsquo;s created to help orient you to the platform you&rsquo;ve chosen, <strong>but it does not require a formal written response.</strong></p>
 
-        <div class="prompt-block required">
-          <p><strong>Prompt 0</strong> <span class="coming-soon">(required &mdash; no written response needed)</span></p>
-          <p class="coming-soon">Content coming soon!</p>
-        </div>
+        <details class="prompt-block required">
+          <summary>Prompt 0 <span class="coming-soon" style="font-weight:400;">(required &mdash; no written response needed)</span></summary>
+          <div class="prompt-content">
+            <p class="coming-soon">Content coming soon!</p>
+          </div>
+        </details>
 
         <p><strong>Between Prompts 1&ndash;7, you must choose 5 prompts to follow and respond to.</strong> For submission purposes, your write-up of your response to each prompt should be up to 500 words.</p>
 
-        <div class="prompt-block"><p><strong>Prompt 1</strong></p><p class="coming-soon">Content coming soon!</p></div>
-        <div class="prompt-block"><p><strong>Prompt 2</strong></p><p class="coming-soon">Content coming soon!</p></div>
-        <div class="prompt-block"><p><strong>Prompt 3</strong></p><p class="coming-soon">Content coming soon!</p></div>
-        <div class="prompt-block"><p><strong>Prompt 4</strong></p><p class="coming-soon">Content coming soon!</p></div>
-        <div class="prompt-block"><p><strong>Prompt 5</strong></p><p class="coming-soon">Content coming soon!</p></div>
-        <div class="prompt-block"><p><strong>Prompt 6</strong></p><p class="coming-soon">Content coming soon!</p></div>
-        <div class="prompt-block"><p><strong>Prompt 7</strong></p><p class="coming-soon">Content coming soon!</p></div>
+        <details class="prompt-block"><summary>Prompt 1</summary><div class="prompt-content"><p class="coming-soon">Content coming soon!</p></div></details>
+        <details class="prompt-block"><summary>Prompt 2</summary><div class="prompt-content"><p class="coming-soon">Content coming soon!</p></div></details>
+        <details class="prompt-block"><summary>Prompt 3</summary><div class="prompt-content"><p class="coming-soon">Content coming soon!</p></div></details>
+        <details class="prompt-block"><summary>Prompt 4</summary><div class="prompt-content"><p class="coming-soon">Content coming soon!</p></div></details>
+        <details class="prompt-block"><summary>Prompt 5</summary><div class="prompt-content"><p class="coming-soon">Content coming soon!</p></div></details>
+        <details class="prompt-block"><summary>Prompt 6</summary><div class="prompt-content"><p class="coming-soon">Content coming soon!</p></div></details>
+        <details class="prompt-block"><summary>Prompt 7</summary><div class="prompt-content"><p class="coming-soon">Content coming soon!</p></div></details>
 
         <p>You might notice that some prompts are a bit more structured, while others are intentionally more open-ended. Given the diversity of various platforms, media formats, and user personalities, we wanted to avoid prescribing specific types of posts to &ldquo;check off&rdquo; in order to complete the guided experience. Rather, we encourage you to create what feels right to you based on your experiences, preferences, and interests!</p>
 
